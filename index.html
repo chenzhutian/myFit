@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Diet</title>
+    <style>
+      th:not(:first-of-type) {
+        border-left: 1px solid #000;
+      }
+      td {
+        padding: 4px 8px;
+      }
+      td:not(:first-of-type) {
+        border-left: 1px solid #000;
+      }
+
+      th.name {
+        width: 250px;
+      }
+      th.serving {
+        width: 80px;
+      }
+      th.unit {
+        width: 50px;
+      }
+      th.protein,
+      th.fat,
+      th.carb,
+      th.calorles {
+        width: 80px;
+      }
+
+      .meal td {
+        border-top: 2px solid #000;
+        border-bottom: 1px solid #000;
+      }
+      .meal-sum td {
+        border-top: 1px solid #000;
+      }
+      .meal-sum td:first-of-type {
+        text-align: center;
+      }
+
+      .day-total td {
+        border-top: 2px solid #000;
+      }
+      .day-total td:first-of-type,
+      .day-goal td:first-of-type,
+      .day-rest td:first-of-type {
+        text-align: center;
+      }
+      .day-rest td {
+        border-bottom: 2px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content"></div>
+    <script src="./script.js"></script>
+  </body>
+</html>
