@@ -1,6 +1,7 @@
 [
     {
         "date": "2020-11-12",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 }
@@ -30,6 +31,7 @@
     },
     {
         "date": "2020-11-13",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 }
@@ -61,6 +63,7 @@
     },
     {
         "date": "2020-11-14",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 }
@@ -91,6 +94,7 @@
     },
     {
         "date": "2020-11-15",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 }
@@ -118,6 +122,7 @@
     },
     {
         "date": "2020-11-16",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 }
@@ -148,6 +153,7 @@
     },
     {
         "date": "2020-11-17",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 },
@@ -182,6 +188,7 @@
     },
     {
         "date": "2020-11-18",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 },
@@ -216,6 +223,7 @@
     },
     {
         "date": "2020-11-19",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 },
@@ -245,6 +253,7 @@
     },
     {
         "date": "2020-11-20",
+        "goal": 2100,
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 },
@@ -274,6 +283,8 @@
     },
     {
         "date": "2020-11-21",
+        "goal": 1900,
+        "ratio": [0.38, 0.42, 0.2],
         "breakfast": [
             { "name": "Reduced Fat Milk", "unit": 1 },
             { "name": "Quaker Protein Banana Nut", "unit": 1 },

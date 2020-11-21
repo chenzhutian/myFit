@@ -15,17 +15,7 @@
         "calorles",
     ];
 
-    const goalCalorles = 2000
-    const goalProtein = goalCalorles * 0.35 / 4
-    const goalCarb = goalCalorles * 0.45 / 4
-    const goalFat = goalCalorles * 0.2 / 9
-    // 4 : 4 : 2
-    const goal = {
-        protein: goalProtein,
-        fat: goalFat,
-        carb: goalCarb,
-        calorles: goalCalorles
-    }
+
 
     const getSumDict = () => tableHeads.slice(3).reduce((o, k) => {
         o[k] = 0
@@ -35,6 +25,18 @@
         "afterbegin",
         data.map((d) => {
             const totalSumForToday = getSumDict()
+            const goalCalorles = d.goal
+            const ratio = d.ratio || [0.35, 0.45, 0.2]
+            const goalProtein = goalCalorles * ratio[0] / 4
+            const goalCarb = goalCalorles * ratio[1] / 4
+            const goalFat = goalCalorles * ratio[2] / 9
+            // 4 : 4 : 2
+            const goal = {
+                protein: goalProtein,
+                fat: goalFat,
+                carb: goalCarb,
+                calorles: goalCalorles
+            }
 
             return `
             <h5>${d.date}</h5>
