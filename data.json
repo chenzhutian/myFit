@@ -241,7 +241,7 @@
             { "name": "Garlic", "unit": 0.05}
         ],
         "extra2": [
-            { "name": "Juice", "unit": 0.5 }
+            { "name": "365 Orange Peach Mango Juice", "unit": 0.5 }
         ],
         "dinner": [
             { "name": "Brocolli", "unit": 1.5},
@@ -294,10 +294,192 @@
         "extra1": [
         ],
         "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 0.91 },
+            { "name": "Beef Tri-tip Steak", "unit": 1.18 },
+            { "name": "Mini Brown Rice", "unit": 1}
         ],
         "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 1}
         ],
         "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 0.91 },
+            { "name": "Beef Tri-tip Steak", "unit": 1.18 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-11-22",
+        "goal": 1900,
+        "ratio": [0.38, 0.42, 0.2],
+        "breakfast": [
+            { "name": "Reduced Fat Milk", "unit": 1 },
+            { "name": "Quaker Protein Banana Nut", "unit": 1 },
+            { "name": "365 Plain Whole Milk", "unit": 0.33 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+            { "name": "Fired fish", "unit": 1 },
+            { "name": "Kraft Tartar Sauce", "unit": 0.25}
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-11-23",
+        "goal": 1900,
+        "ratio": [0.38, 0.42, 0.2],
+        "breakfast": [
+            { "name": "Reduced Fat Milk", "unit": 1 },
+            { "name": "Quaker Protein Banana Nut", "unit": 1 },
+            { "name": "365 Plain Whole Milk", "unit": 0.33 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+            { "name": "Asparagus", "unit": 2.3},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Tomato", "unit": 2.625 },
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Asparagus", "unit": 2.3 },
+            { "name": "Chicken Breast", "unit": 1.56 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Tomato", "unit": 2.625 },
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-11-24",
+        "goal": 1800,
+        "ratio": [0.38, 0.42, 0.2],
+        "breakfast": [
+            { "name": "Reduced Fat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "365 Plain Whole Milk", "unit": 0.33 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Brown Rice", "unit": 1},
+            { "name": "Kiwifruit Green Raw", "unit": 0.74},
+            { "name": "Garlic", "unit": 0.03}
+        ],
+        "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 1},
+            { "name": "Harvest Honey Wheat", "unit": 1 },
+            { "name": "Roast Beef", "unit": 1 }
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg", "unit": 0.5},
+            { "name": "Egg White", "unit": 1.5},
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra3": [
+
+        ]
+    },
+    {
+        "date": "2020-11-25",
+        "goal": 1800,
+        "ratio": [0.38, 0.42, 0.2],
+        "breakfast": [
+            { "name": "Fatfree Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "365 Plain Whole Milk", "unit": 0.33 },
+            { "name": "Protein One", "unit": 1 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.7},
+            { "name": "Chicken Breast", "unit": 1.55 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Brown Rice", "unit": 1},
+            { "name": "Garlic", "unit": 0.03}
+        ],
+        "extra2": [
+            { "name": "Kiwifruit Green Raw", "unit": 0.74},
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.7},
+            { "name": "Chicken Breast", "unit": 1.55 },
+            { "name": "Egg", "unit": 1},
+            { "name": "Egg White", "unit": 1},
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra3": [
+            { "name": "Fatfree Milk", "unit": 0.5 }
+        ]
+    },
+    {
+        "date": "2020-11-26",
+        "goal": 1800,
+        "ratio": [0.4, 0.4, 0.2],
+        "breakfast": [
+            { "name": "Fatfree Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Protein One", "unit": 1 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.55 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini White Rice", "unit": 1},
+            { "name": "Garlic", "unit": 0.03}
+        ],
+        "extra2": [
+
+            { "name": "Roast Beef", "unit": 1 },
+            { "name": "Kiwifruit Green Raw", "unit": 0.74},
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.55 },
+            { "name": "Egg", "unit": 1},
+            { "name": "Egg White", "unit": 1},
+            { "name": "Mini White Rice", "unit": 1},
+            { "name": "Garlic", "unit": 0.03}
         ],
         "extra3": [
         ]
