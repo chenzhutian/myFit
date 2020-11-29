@@ -17,14 +17,18 @@
 
 
 
-    const getSumDict = () => tableHeads.slice(3).reduce((o, k) => {
-        o[k] = 0
+    const getSumDict = (fat = 0) => tableHeads.slice(3).reduce((o, k) => {
+        if(k === 'fat') {
+            o[k] = fat
+        } else {
+            o[k] = 0
+        }
         return o
     }, {})
     document.querySelector(".content").insertAdjacentHTML(
         "afterbegin",
         data.map((d) => {
-            const totalSumForToday = getSumDict()
+            const totalSumForToday = getSumDict(2)
             const goalCalorles = d.goal
             const ratio = d.ratio || [0.35, 0.45, 0.2]
             const goalProtein = goalCalorles * ratio[0] / 4

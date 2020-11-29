@@ -303,5 +303,13 @@
         "carb": 10,
         "fat": 0,
         "calorles": 160
+     },
+     {
+        "name": "Jazz Apple",
+        "serving": "100g",
+        "protein": 0,
+        "carb": 22,
+        "fat": 0,
+        "calorles": 80
      }
 ]
