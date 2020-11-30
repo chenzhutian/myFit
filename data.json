@@ -580,11 +580,12 @@
         "dinner": [
             { "name": "Brocolli", "unit": 1.5 },
             { "name": "Chicken Breast", "unit": 1.55 },
-            { "name": "Egg White", "unit": 2 },
+            { "name": "Egg", "unit": 0.5 },
+            { "name": "Egg White", "unit": 1.5 },
             { "name": "365 Organic Linguine", "unit": 0.5}
         ],
         "extra3": [
-            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 }
+            { "name": "Fatfree Milk", "unit": 0.75 }
         ]
     }
 ]

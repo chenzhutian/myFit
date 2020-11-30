@@ -13,11 +13,12 @@
         "fat",
         "carb",
         "calorles",
+        "calorles est."
     ];
 
 
 
-    const getSumDict = (fat = 0) => tableHeads.slice(3).reduce((o, k) => {
+    const getSumDict = (fat = 0) => tableHeads.slice(3, 7).reduce((o, k) => {
         if(k === 'fat') {
             o[k] = fat
         } else {
@@ -57,7 +58,7 @@
                         const sum = getSumDict()
 
                         return `
-                    <tr class="meal" ><td colspan="7">${key}</td></tr>
+                    <tr class="meal" ><td colspan="8">${key}</td></tr>
 
                     ${d[key].map(({ name, unit }) => {
                             const nutrition = nutritionDataset.find(u => u.name === name);
@@ -69,12 +70,14 @@
                         <td>${nutrition.serving}</td>
                         <td>${unit}</td>
                         ${Object.keys(sum).map(k => `<td>${(nutrition[k] * unit).toFixed(2)}</td>`).join('')}
+                        <td>${((nutrition.protein + nutrition.carb) * 4 + nutrition.fat * 9 ).toFixed(2)}</td>
                       </tr>`;
                         }).join('')}
 
                     <tr class="meal-sum" >
                         <td colspan="3">Total in this ${key}</td>
                         ${Object.keys(sum).map(k => `<td>${sum[k].toFixed(2)}</td>`).join('')}
+                        <td>${((sum.protein + sum.carb) * 4 + sum.fat * 9 ).toFixed(2)}</td>
                     </tr> 
                 `}).join("")
                 }
@@ -82,6 +85,7 @@
             <tr class="day-total">
                 <td colspan="3">Total today</td>
                 ${Object.keys(goal).map(k => `<td>${totalSumForToday[k].toFixed(2)}</td>`).join('')}
+                <td>${((totalSumForToday.protein + totalSumForToday.carb) * 4 + totalSumForToday.fat * 9 ).toFixed(2)}</td>
             </tr>
             <tr class="day-goal">
                 <td colspan="3">Goal</td>
@@ -90,6 +94,7 @@
             <tr class="day-rest">
                 <td colspan="3">Remaining</td>
                 ${Object.keys(goal).map(k => `<td>${(goal[k] - totalSumForToday[k]).toFixed(2)}</td>`).join('')}
+                <td>${(goal.calorles - (totalSumForToday.protein + totalSumForToday.carb) * 4 - totalSumForToday.fat * 9 ).toFixed(2)}</td>
             </tr>
             </table>
         `}).join('')
