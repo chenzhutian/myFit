@@ -1,8 +1,5 @@
 (async () => {
-    const data = await fetch("./data.json").then((res) => res.json());
-    const nutritionDataset = await fetch("./unit.json").then((res) =>
-        res.json()
-    );
+
 
     const meals = ["breakfast", "extra1", "lunch", "extra2", "dinner", "extra3"];
     const tableHeads = [
