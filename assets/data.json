@@ -726,5 +726,42 @@
         "extra3": [
 
         ]
+    },
+    {
+        "date": "2020-12-04",
+        "goal": 1800,
+        "ratio": [0.4, 0.4, 0.2],
+        "breakfast": [
+            { "name": "Fatfree Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            { "name": "Allacaie Tuna in water", "unit": 0.5},
+            { "name": "365 Organic Linguine", "unit": 1},
+            { "name": "Garlic", "unit": 0.04}
+        ],
+        "extra2": [
+            { "name": "Harvest Honey Wheat", "unit": 0.5 },
+            { "name": "Roast Beef", "unit": 1},
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Allacaie Tuna in water", "unit": 0.5},
+            { "name": "Egg", "unit": 2},
+            { "name": "365 Organic Linguine", "unit": 1},
+            { "name": "Garlic", "unit": 0.04}
+        ],
+        "extra3": [
+            { "name": "Roast Beef", "unit": 0.5}
+        ]
     }
 ]

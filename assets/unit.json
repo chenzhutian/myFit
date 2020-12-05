@@ -327,5 +327,13 @@
         "carb": 2,
         "fat": 5,
         "calorles": 56
+     },
+     {
+        "name": "Allacaie Tuna in water",
+        "serving": "1pack",
+        "protein": 70,
+        "carb": 0,
+        "fat": 2.5,
+        "calorles": 300
      }
 ]
