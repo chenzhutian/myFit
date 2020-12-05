@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack serve",
-    "build": "webpack --mode=production && cp -r assets ../ML4VIS && cp dist/* ../ML4VIS && cd ../ML4VIS && git add . && git commit -m 'update' && git push"
+    "build": "webpack --mode=production && cp -r assets ./dist"
   },
   "author": "",
   "license": "ISC",
