@@ -21,6 +21,15 @@ import {
 
 type item = { name: string, unit: number }
 
+interface NutritionItem {
+  name: string,
+  serving: string
+  protein: number
+  carb: number
+  fat: number
+  calorles: number
+}
+
 interface RowProps {
   date: string,
   ratio: number[],
@@ -31,7 +40,7 @@ interface RowProps {
   extra2: item[],
   dinner: item[],
   extra3: item[],
-  nutritionDataset: any[]
+  nutritionDataset: NutritionItem[]
 }
 
 const meals = ["breakfast", "extra1", "lunch", "extra2", "dinner", "extra3"];
@@ -56,7 +65,7 @@ const getSumDict = (fat = 0) => tableHeads.slice(2, 6).reduce((o, k) => {
 }, {} as { protein: number, fat: number, carb: number, calorles: number })
 
 
-function Row(props: RowProps) {
+function DailyTable(props: RowProps) {
   const classes = useStyles();
   const { nutritionDataset } = props
 
@@ -100,10 +109,7 @@ function Row(props: RowProps) {
                         value={name}
                         displayEmpty
                       >
-                        <MenuItem value={name}>{name}</MenuItem>
-                        <MenuItem value={10}>Ten</MenuItem>
-                        <MenuItem value={20}>Twenty</MenuItem>
-                        <MenuItem value={30}>Thirty</MenuItem>
+                        {nutritionDataset.map(nd => <MenuItem value={nd.name}>{nd.name}</MenuItem>)}
                       </Select>
                     </TableCell>
 
@@ -195,7 +201,6 @@ function Row(props: RowProps) {
   );
 }
 
-
 export default function App() {
   const classes = useStyles();
   const [data, setData] = useState([])
@@ -212,7 +217,6 @@ export default function App() {
     }
     fetchData()
   }, [])
-
 
   return <ThemeProvider theme={theme}> <div className={classes.root}>
     <CssBaseline />
@@ -233,7 +237,7 @@ export default function App() {
       <Table className={classes.table} size="small" aria-label="table dense">
 
         <TableBody>
-          {data.map(d => <Row key={d.date} {...d} nutritionDataset={nutritionDataset}></Row>)}
+          {data.map(d => <DailyTable key={d.date} {...d} nutritionDataset={nutritionDataset}></DailyTable>)}
         </TableBody>
       </Table>
     </TableContainer>
