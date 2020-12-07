@@ -7,8 +7,8 @@ import {
   CssBaseline,
   Paper, Collapse,
   AppBar, Toolbar, IconButton, Button,
-  ThemeProvider,
-  Table,
+  ThemeProvider, Input,
+  Table, Select, MenuItem, TextField,
   TableContainer, TableHead, TableBody, TableCell, TableRow
 } from "@material-ui/core";
 import {
@@ -95,9 +95,26 @@ function Row(props: RowProps) {
                         <DeleteIcon fontSize="small" color="error" />
                       </IconButton>
                     </TableCell>
-                    <TableCell width={250}>{name}</TableCell>
+                    <TableCell width={295}>
+                      <Select
+                        value={name}
+                        displayEmpty
+                      >
+                        <MenuItem value={name}>{name}</MenuItem>
+                        <MenuItem value={10}>Ten</MenuItem>
+                        <MenuItem value={20}>Twenty</MenuItem>
+                        <MenuItem value={30}>Thirty</MenuItem>
+                      </Select>
+                    </TableCell>
+
                     <TableCell width={120}>{nutrition.serving}</TableCell>
-                    <TableCell width={60}>{unit}</TableCell>
+                    <TableCell width={70}>
+                      <Input className={classes.unitInput}
+                        id="standard-number"
+                        type="number"
+                        value={unit}
+                      />
+                    </TableCell>
                     {Object.keys(sum).map(key => <TableCell key={`${props.date}_${k}_${key}`}>{(nutrition[key] * unit).toFixed(2)}</TableCell>)}
                     <TableCell>{((nutrition.protein + nutrition.carb) * 4 + nutrition.fat * 9).toFixed(2)} </TableCell>
                   </TableRow>
@@ -106,19 +123,17 @@ function Row(props: RowProps) {
                 return <React.Fragment key={k}>
 
                   <TableRow key={`${props.date}_total_${k}`} className={classes.totalRow}>
-                    <TableCell colSpan={4}>Total in {k}</TableCell>
+                    <TableCell width={90}>
+                      <IconButton aria-label="delete" size="small">
+                        <AddIcon fontSize="small" />
+                      </IconButton>
+                    </TableCell>
+                    <TableCell colSpan={3}>Total in {k}</TableCell>
                     {Object.keys(sum).map(key => <TableCell key={`${props.date}_total_${key}`}>{sum[key].toFixed(2)}</TableCell>)}
                     <TableCell>{((sum.protein + sum.carb) * 4 + sum.fat * 9).toFixed(2)} </TableCell>
                   </TableRow>
                   {details}
 
-                  <TableRow>
-                    <TableCell colSpan={9} align="center">
-                      <IconButton aria-label="delete" size="small">
-                        <AddIcon fontSize="small" />
-                      </IconButton>
-                    </TableCell>
-                  </TableRow>
                 </React.Fragment>
               })
             }
@@ -140,8 +155,8 @@ function Row(props: RowProps) {
                     {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                   </IconButton>
                 </TableCell>
-                <TableCell component="th" scope="row" width={250}> {props.date} </TableCell>
-                {tableHeads.map(t => <TableCell align="center" width={t === 'serving' ? 120 : t === 'unit' ? 60 : 90} key={`${props.date}_head_${t}`}>{`${t[0].toUpperCase()}${t.slice(1)}`}</TableCell>)}
+                <TableCell component="th" scope="row" width={295}> {props.date} </TableCell>
+                {tableHeads.map(t => <TableCell align="left" width={t === 'serving' ? 120 : t === 'unit' ? 70 : 90} key={`${props.date}_head_${t}`}>{`${t[0].toUpperCase()}${t.slice(1)}`}</TableCell>)}
               </TableRow>
             </TableHead>
 

@@ -1,5 +1,5 @@
 import { createStyles, Theme, makeStyles, createMuiTheme } from "@material-ui/core/styles";
-import { blue, orange } from "@material-ui/core/colors";
+import { blue, orange, pink } from "@material-ui/core/colors";
 import { dark } from "@material-ui/core/styles/createPalette";
 
 
@@ -38,6 +38,12 @@ export const useStyles = makeStyles((theme: Theme) =>
         },
         recordRow: {
             backgroundColor: '#212121'
+        },
+        unitInput: {
+            '& input::-webkit-outer-spin-button, & input::-webkit-inner-spin-button': {
+                '-webkit-appearance': 'none',
+                margin: 0,
+            }
         }
     })
 );
@@ -45,6 +51,8 @@ export const useStyles = makeStyles((theme: Theme) =>
 export const theme = createMuiTheme({
     palette: {
         type: 'dark',
+        primary: blue,
+        secondary: pink,
         background: {
             default: '#424242'
         }
