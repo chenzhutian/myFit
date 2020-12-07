@@ -14,7 +14,9 @@ import {
 import {
   Menu as MenuIcon,
   KeyboardArrowUp as KeyboardArrowUpIcon,
-  KeyboardArrowDown as KeyboardArrowDownIcon
+  KeyboardArrowDown as KeyboardArrowDownIcon,
+  DeleteForeverSharp as DeleteIcon,
+  AddBoxSharp as AddIcon
 } from '@material-ui/icons'
 
 type item = { name: string, unit: number }
@@ -88,7 +90,11 @@ function Row(props: RowProps) {
                   Object.keys(totalSumForToday).forEach(k => totalSumForToday[k] += nutrition[k] * unit)
 
                   return <TableRow key={`${props.date}_meal_${k}_${name}`} className={classes.recordRow}>
-                    <TableCell width={90}></TableCell>
+                    <TableCell width={90}>
+                      <IconButton aria-label="delete" size="small">
+                        <DeleteIcon fontSize="small" color="error" />
+                      </IconButton>
+                    </TableCell>
                     <TableCell width={250}>{name}</TableCell>
                     <TableCell width={120}>{nutrition.serving}</TableCell>
                     <TableCell width={60}>{unit}</TableCell>
@@ -106,6 +112,13 @@ function Row(props: RowProps) {
                   </TableRow>
                   {details}
 
+                  <TableRow>
+                    <TableCell colSpan={9} align="center">
+                      <IconButton aria-label="delete" size="small">
+                        <AddIcon fontSize="small" />
+                      </IconButton>
+                    </TableCell>
+                  </TableRow>
                 </React.Fragment>
               })
             }
