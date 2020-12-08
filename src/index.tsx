@@ -30,7 +30,7 @@ interface NutritionItem {
   calorles: number
 }
 
-interface RowProps {
+interface DailyRecord {
   date: string,
   ratio: number[],
   goal: number,
@@ -43,7 +43,13 @@ interface RowProps {
   nutritionDataset: NutritionItem[]
 }
 
-const meals = ["breakfast", "extra1", "lunch", "extra2", "dinner", "extra3"];
+const meals = ["breakfast", "extra1", "lunch", "extra2", "dinner", "extra3"] as const;
+interface RowProps extends DailyRecord {
+
+  //
+  onChangeItemUnit: (meal: typeof meals[number], itemIdx: number, value: number) => void
+}
+
 const tableHeads = [
   // "name",
   "serving",
@@ -90,15 +96,15 @@ function DailyTable(props: RowProps) {
       <Collapse in={open} timeout="auto" unmountOnExit>
         <Table size="small" aria-label="table dense">
           <TableBody>
-            {meals.filter(k => props[k] && props[k].length)
-              .map(k => {
+            {meals.filter(meal => props[meal] && props[meal].length)
+              .map(meal => {
                 const sum = getSumDict()
-                const details = props[k].map(({ name, unit }: item) => {
+                const details = props[meal].map(({ name, unit }: item, itemIdx) => {
                   const nutrition = nutritionDataset.find(u => u.name === name);
                   Object.keys(sum).forEach(k => sum[k] += nutrition[k] * unit)
                   Object.keys(totalSumForToday).forEach(k => totalSumForToday[k] += nutrition[k] * unit)
 
-                  return <TableRow key={`${props.date}_meal_${k}_${name}`} className={classes.recordRow}>
+                  return <TableRow key={`${props.date}_meal_${meal}_${name}`} className={classes.recordRow}>
                     <TableCell width={90}>
                       <IconButton aria-label="delete" size="small">
                         <DeleteIcon fontSize="small" color="error" />
@@ -119,22 +125,23 @@ function DailyTable(props: RowProps) {
                         id="standard-number"
                         type="number"
                         value={unit}
+                        onChange={e => props.onChangeItemUnit(meal, itemIdx, +e.target.value)}
                       />
                     </TableCell>
-                    {Object.keys(sum).map(key => <TableCell key={`${props.date}_${k}_${key}`}>{(nutrition[key] * unit).toFixed(2)}</TableCell>)}
+                    {Object.keys(sum).map(key => <TableCell key={`${props.date}_${meal}_${key}`}>{(nutrition[key] * unit).toFixed(2)}</TableCell>)}
                     <TableCell>{((nutrition.protein + nutrition.carb) * 4 + nutrition.fat * 9).toFixed(2)} </TableCell>
                   </TableRow>
                 })
 
-                return <React.Fragment key={k}>
+                return <React.Fragment key={meal}>
 
-                  <TableRow key={`${props.date}_total_${k}`} className={classes.totalRow}>
+                  <TableRow key={`${props.date}_total_${meal}`} className={classes.totalRow}>
                     <TableCell width={90}>
                       <IconButton aria-label="delete" size="small">
                         <AddIcon fontSize="small" />
                       </IconButton>
                     </TableCell>
-                    <TableCell colSpan={3}>Total in {k}</TableCell>
+                    <TableCell colSpan={3}>Total in {meal}</TableCell>
                     {Object.keys(sum).map(key => <TableCell key={`${props.date}_total_${key}`}>{sum[key].toFixed(2)}</TableCell>)}
                     <TableCell>{((sum.protein + sum.carb) * 4 + sum.fat * 9).toFixed(2)} </TableCell>
                   </TableRow>
@@ -203,7 +210,7 @@ function DailyTable(props: RowProps) {
 
 export default function App() {
   const classes = useStyles();
-  const [data, setData] = useState([])
+  const [data, setData] = useState<DailyRecord[]>([])
   const [nutritionDataset, setNutritionDataset] = useState([])
 
   useEffect(() => {
@@ -237,7 +244,15 @@ export default function App() {
       <Table className={classes.table} size="small" aria-label="table dense">
 
         <TableBody>
-          {data.map(d => <DailyTable key={d.date} {...d} nutritionDataset={nutritionDataset}></DailyTable>)}
+          {data.map(d => <DailyTable
+            key={d.date}
+            {...d}
+            nutritionDataset={nutritionDataset}
+            onChangeItemUnit={(meal, itemIdx, newVal) => {
+              d[meal][itemIdx].unit = newVal
+              setData([...data])
+            }}
+          />)}
         </TableBody>
       </Table>
     </TableContainer>
