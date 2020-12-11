@@ -343,5 +343,13 @@
         "carb": 16,
         "fat": 2.5,
         "calorles": 130
+     },
+     {
+        "name": "Uncured Ham",
+        "serving": "5slices/52g",
+        "protein": 10,
+        "carb": 1,
+        "fat": 2,
+        "calorles": 60
      }
 ]
