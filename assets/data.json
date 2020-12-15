@@ -963,5 +963,173 @@
         ],
         "extra3": [
         ]
+    },
+    {
+        "date": "2020-12-11",
+        "goal": 1750,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.4}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Egg White", "unit": 2},
+            { "name": "Egg", "unit": 1},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Mini Brown Rice", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Roast Beef", "unit": 1 },
+            { "name": "Impact Whey Protein",  "unit": 1.5}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Egg White", "unit": 2},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Mini White Rice", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-12-12",
+        "goal": 1750,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "365 Oganic Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.4}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.58},
+            { "name": "Chicken Breast", "unit": 1.57 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini White Rice", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Uncured Ham", "unit": 1 },
+            { "name": "Harvest Honey Wheat", "unit": 0.25 },
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.58},
+            { "name": "Chicken Breast", "unit": 1.57 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-12-13",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.4}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.58},
+            { "name": "Chicken Breast", "unit": 1.57 },
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Harvest Honey Wheat", "unit": 0.25 },
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Din-tai fung red oil", "unit": 1},
+            { "name": "Brocolli", "unit": 1.58},
+            { "name": "Chicken Breast", "unit": 1.57 },
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-12-14",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.4}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.67 },
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Harvest Honey Wheat", "unit": 0.25 },
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Din-tai fung red oil", "unit": 1},
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.67 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra3": [
+        ]
+    },
+    {
+        "date": "2020-12-15",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.3}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Egg White", "unit": 2},
+            {  "name": "Top Sirloin Steak", "unit": 1.5},
+            {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Harvest Honey Wheat", "unit": 0.25 },
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.67 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Dececcd Linguine no.7", "unit": 1}
+        ],
+        "extra3": [
+  
+        ]
     }
 ]

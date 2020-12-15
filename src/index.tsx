@@ -71,6 +71,11 @@ const getSumDict = (fat = 0) => tableHeads.slice(2, 6).reduce((o, k) => {
 }, {} as { protein: number, fat: number, carb: number, calorles: number })
 
 
+// { "name": "Egg", "unit": 2},
+// { "name": "Whole white mushrooms", "unit": 2.4},
+// { "name": "Spinach", "unit": 2.25 }
+// { "name": "Green Chile Peppers", "unit": 0.53 }
+
 function DailyTable(props: RowProps) {
   const classes = useStyles();
   const { nutritionDataset } = props

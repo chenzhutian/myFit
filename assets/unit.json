@@ -169,6 +169,14 @@
         "calorles": 23
     },
     {
+        "name": "Green Chile Peppers",
+        "serving": "100g",
+        "protein": 2,
+        "carb": 9.46,
+        "fat": 0.2,
+        "calorles": 40
+    },
+    {
         "name": "Whole white mushrooms",
         "serving": "100g",
         "protein": 3.6,
@@ -201,6 +209,14 @@
         "calorles": 120
     },
     {
+        "name": "365 Oganic Milk",
+        "serving": "1cup",
+        "protein": 8,
+        "carb": 12,
+        "fat": 8,
+        "calorles": 150
+    },
+    {
         "name": "Beef Tri-tip Steak",
         "serving": "100g",
         "protein": 21.2,
@@ -208,6 +224,23 @@
         "fat": 9.53,
         "calorles": 174.1
     },
+    {
+        "name": "Top Sirloin Steak",
+        "serving": "100g",
+        "protein": 19.6,
+        "carb": 0,
+        "fat": 14.3,
+        "calorles": 214.3 
+    },
+    {
+        "name": "Barilla Whole Grain Spaghetti",
+        "serving": "56g",
+        "protein": 8,
+        "carb": 39,
+        "fat": 1.5,
+        "calorles": 180 
+    },
+    
     {
         "name": "Uncured Honey Ham",
         "serving": "3slices/57g",
@@ -269,6 +302,14 @@
         "serving": "2oz/56g",
         "protein": 6,
         "carb": 43,
+        "fat": 1,
+        "calorles": 200
+     },
+     {
+        "name": "Dececcd Linguine no.7",
+        "serving": "56g",
+        "protein": 8,
+        "carb": 40,
         "fat": 1,
         "calorles": 200
      },
