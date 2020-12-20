@@ -1119,8 +1119,7 @@
             {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
         ],
         "extra2": [
-            { "name": "Harvest Honey Wheat", "unit": 0.25 },
-            { "name": "Impact Whey Protein",  "unit": 1}
+            { "name": "Impact Whey Protein",  "unit": 2}
         ],
         "dinner": [
             { "name": "Brocolli", "unit": 1.5},
@@ -1130,6 +1129,108 @@
         ],
         "extra3": [
   
+        ]
+    },
+    {
+        "date": "2020-12-16",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.5}
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 2}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.5},
+            { "name": "Egg White", "unit": 2},
+            {  "name": "Top Sirloin Steak", "unit": 1.5},
+            {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra3": [
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.25 },
+            { "name": "Blueberry", "unit": 0.3}
+        ]
+    },
+    {
+        "date": "2020-12-17",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Egg", "unit": 2},
+            { "name": "Whole white mushrooms", "unit": 2.4},
+            { "name": "Spinach", "unit": 2.25 },
+            { "name": "Green Chile Peppers", "unit": 0.53 }     
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            { "name": "Mini Basmati Rice", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Harvest Honey Wheat", "unit": 1 },
+            { "name": "Roast Beef", "unit": 0.5 },
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 2},
+            {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra3": [
+            { "name": "Lowfat Milk", "unit": 0.5 }
+        ]
+    },
+    {
+        "date": "2020-12-18",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.05 },
+            { "name": "Blueberry", "unit": 0.5} 
+        ],
+        "extra1": [
+            { "name": "Protein One", "unit": 1 }
+        ],
+        "lunch": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra2": [
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ],
+        "dinner": [
+            { "name": "Brocolli", "unit": 1.6},
+            { "name": "Chicken Breast", "unit": 1.5 },
+            { "name": "Egg White", "unit": 1},
+            { "name": "Egg", "unit": 1},
+            {  "name": "Barilla Whole Grain Spaghetti", "unit": 1}
+        ],
+        "extra3": [
+            { "name": "Lowfat Milk", "unit": 0.5 },
+            { "name": "Impact Whey Protein",  "unit": 0.5}
         ]
     }
 ]

@@ -95,14 +95,9 @@ module.exports = {
         extensions: [
             '.ts', '.js', '.tsx'
         ]
-    },
+    },    
     output: {
         filename: '[name].[contenthash].js',
-        // path: path.resolve(__dirname, '../../vislang@public'),
-        // path: path.resolve(__dirname, '../public')
-    },
-
-    output: {
         path: path.resolve(__dirname, 'dist')
     },
 
