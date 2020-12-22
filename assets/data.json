@@ -1232,5 +1232,28 @@
             { "name": "Lowfat Milk", "unit": 0.5 },
             { "name": "Impact Whey Protein",  "unit": 0.5}
         ]
+    },
+    {
+        "date": "2020-12-22",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            {  "name": "Quaker Oats", "unit": 1 },
+            {  "name": "Dairy Almond Vanilla Milk", "unit": 1 },
+            {  "name": "Stonyfield organic lowfact vanilla", "unit": 0.44 }
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+
+        ],
+        "extra2": [
+        ],
+        "dinner": [
+
+        ],
+        "extra3": [
+
+        ]
     }
 ]
