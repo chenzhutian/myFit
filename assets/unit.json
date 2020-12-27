@@ -386,6 +386,14 @@
         "calorles": 130
      },
      {
+        "name": "365 Lowfat Milk",
+        "serving": "1cup",
+        "protein": 10,
+        "carb": 14,
+        "fat": 2.5,
+        "calorles": 120
+     },
+     {
         "name": "Uncured Ham",
         "serving": "5slices/52g",
         "protein": 10,
@@ -416,5 +424,13 @@
         "carb": 7,
         "fat": 2.5,
         "calorles": 70
+     },
+     {
+        "name": "Beef Strip Steak Butcher shop beef Lion",
+        "serving": "4oz",
+        "protein": 23,
+        "carb": 0,
+        "fat": 18,
+        "calorles": 260
      }
 ]

@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import { useStyles, theme } from './style'
+import { data as rawData, FoodItem, DataPerDay } from './data'
+import { units as nutritionDataset } from './unit'
 
 import {
   Typography,
@@ -19,7 +21,7 @@ import {
   AddBoxSharp as AddIcon
 } from '@material-ui/icons'
 
-type item = { name: string, unit: number }
+// type item = { name: string, unit: number }
 
 interface NutritionItem {
   name: string,
@@ -30,21 +32,21 @@ interface NutritionItem {
   calorles: number
 }
 
-interface DailyRecord {
-  date: string,
-  ratio: number[],
-  goal: number,
-  breakfast: item[],
-  extra1: item[],
-  lunch: item[],
-  extra2: item[],
-  dinner: item[],
-  extra3: item[],
-  nutritionDataset: NutritionItem[]
-}
+// interface DailyRecord {
+//   date: string,
+//   ratio: number[],
+//   goal: number,
+//   breakfast: FoodItem[],
+//   extra1: FoodItem[],
+//   lunch: FoodItem[],
+//   extra2: FoodItem[],
+//   dinner: FoodItem[],
+//   extra3: FoodItem[],
+//   nutritionDataset: NutritionItem[]
+// }
 
 const meals = ["breakfast", "extra1", "lunch", "extra2", "dinner", "extra3"] as const;
-interface RowProps extends DailyRecord {
+interface RowProps extends DataPerDay {
 
   //
   onChangeItemUnit: (meal: typeof meals[number], itemIdx: number, value: number) => void
@@ -74,7 +76,6 @@ const getSumDict = (fat = 0) => tableHeads.slice(2, 6).reduce((o, k) => {
 
 function DailyTable(props: RowProps) {
   const classes = useStyles();
-  const { nutritionDataset } = props
 
   const [open, setOpen] = React.useState(false);
 
@@ -100,7 +101,7 @@ function DailyTable(props: RowProps) {
             {meals.filter(meal => props[meal] && props[meal].length)
               .map(meal => {
                 const sum = getSumDict()
-                const details = props[meal].map(({ name, unit }: item, itemIdx) => {
+                const details = props[meal].map(({ name, unit }: FoodItem, itemIdx) => {
                   const nutrition = nutritionDataset.find(u => u.name === name);
                   Object.keys(sum).forEach(k => sum[k] += nutrition[k] * unit)
                   Object.keys(totalSumForToday).forEach(k => totalSumForToday[k] += nutrition[k] * unit)
@@ -211,20 +212,20 @@ function DailyTable(props: RowProps) {
 
 export default function App() {
   const classes = useStyles();
-  const [data, setData] = useState<DailyRecord[]>([])
-  const [nutritionDataset, setNutritionDataset] = useState([])
+  const [data, setData] = useState<DataPerDay[]>(rawData)
+  // const [nutritionDataset, setNutritionDataset] = useState(units)
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const nutritionDataset = await fetch("/assets/unit.json").then((res) =>
-        res.json()
-      );
-      setNutritionDataset(nutritionDataset)
-      const data = await fetch("/assets/data.json").then((res) => res.json());
-      setData(data)
-    }
-    fetchData()
-  }, [])
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const nutritionDataset = await fetch("/assets/unit.json").then((res) =>
+  //       res.json()
+  //     );
+  //     setNutritionDataset(nutritionDataset)
+  //     const data = await fetch("/assets/data.json").then((res) => res.json());
+  //     setData(data)
+  //   }
+  //   fetchData()
+  // }, [])
 
   return <ThemeProvider theme={theme}> <div className={classes.root}>
     <CssBaseline />
@@ -248,7 +249,6 @@ export default function App() {
           {data.map(d => <DailyTable
             key={d.date}
             {...d}
-            nutritionDataset={nutritionDataset}
             onChangeItemUnit={(meal, itemIdx, newVal) => {
               d[meal][itemIdx].unit = newVal
               setData([...data])

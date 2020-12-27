@@ -1245,7 +1245,7 @@
         "extra1": [
         ],
         "lunch": [
-
+            { "name": "Beef Strip Steak Butcher shop beef Lion", "unit": 1.5}
         ],
         "extra2": [
         ],
@@ -1253,7 +1253,31 @@
 
         ],
         "extra3": [
+            { "name": "Impact Whey Protein",  "unit": 1}
+        ]
+    },
+    {
+        "date": "2020-12-27",
+        "goal": 1800,
+        "ratio": [0.41, 0.39, 0.2],
+        "breakfast": [
+            { "name": "Lowfat Milk", "unit": 1 },
+            { "name": "Quaker Oats", "unit": 1 },
+            { "name": "Organics Greek Plain Nonfat Yogurt", "unit": 0.05 },
+            { "name": "Blueberry", "unit": 0.5} 
+        ],
+        "extra1": [
+        ],
+        "lunch": [
+            { "name": "Beef Strip Steak Butcher shop beef Lion", "unit": 1.5}
+        ],
+        "extra2": [
+        ],
+        "dinner": [
 
+        ],
+        "extra3": [
+            { "name": "Impact Whey Protein",  "unit": 1}
         ]
     }
 ]
