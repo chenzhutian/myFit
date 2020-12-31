@@ -231,7 +231,7 @@ export const data: DataPerDay[] = [
     ],
     extra1: [
       { name: "Harvest Honey Wheat", unit: 1 },
-      { name: "Roast Beef", unit: 1 },
+      { name: "Land O' Frost Roast Beef", unit: 1 },
     ],
     lunch: [
       { name: "Brocolli", unit: 1.6 },
@@ -381,7 +381,7 @@ export const data: DataPerDay[] = [
     extra2: [
       { name: "Impact Whey Protein", unit: 1 },
       { name: "Harvest Honey Wheat", unit: 1 },
-      { name: "Roast Beef", unit: 1 },
+      { name: "Land O' Frost Roast Beef", unit: 1 },
     ],
     dinner: [
       { name: "Brocolli", unit: 1.5 },
@@ -444,7 +444,7 @@ export const data: DataPerDay[] = [
       { name: "Garlic", unit: 0.03 },
     ],
     extra2: [
-      { name: "Roast Beef", unit: 1 },
+      { name: "Land O' Frost Roast Beef", unit: 1 },
       { name: "Kiwifruit Green Raw", unit: 0.74 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
@@ -633,7 +633,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Harvest Honey Wheat", unit: 0.5 },
-      { name: "Smoked Turkey Breast", unit: 1 },
+      { name: "Land O' Frost Smoked Turkey Breast", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -663,7 +663,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Harvest Honey Wheat", unit: 0.5 },
-      { name: "Smoked Turkey Breast", unit: 1 },
+      { name: "Land O' Frost Smoked Turkey Breast", unit: 1 },
       { name: "Egg White", unit: 1 },
       { name: "Egg", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
@@ -698,7 +698,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Harvest Honey Wheat", unit: 0.5 },
-      { name: "Roast Beef", unit: 1 },
+      { name: "Land O' Frost Roast Beef", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -708,7 +708,7 @@ export const data: DataPerDay[] = [
       { name: "365 Organic Linguine", unit: 1 },
       { name: "Garlic", unit: 0.04 },
     ],
-    extra3: [{ name: "Roast Beef", unit: 0.5 }],
+    extra3: [{ name: "Land O' Frost Roast Beef", unit: 0.5 }],
   },
   {
     date: "2020-12-05",
@@ -787,7 +787,7 @@ export const data: DataPerDay[] = [
     extra2: [
       { name: "Impact Whey Protein", unit: 1 },
       { name: "Harvest Honey Wheat", unit: 0.5 },
-      { name: "Smoked Turkey Breast", unit: 1.33 },
+      { name: "Land O' Frost Smoked Turkey Breast", unit: 1.33 },
     ],
     dinner: [
       { name: "Brocolli", unit: 1.5 },
@@ -816,7 +816,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Fired fish", unit: 0.5 },
-      { name: "Uncured Ham", unit: 1 },
+      { name: "Land O' Frost Uncured Ham", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -847,7 +847,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Harvest Honey Wheat", unit: 0.5 },
-      { name: "Uncured Ham", unit: 1 },
+      { name: "Land O' Frost Uncured Ham", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -877,7 +877,7 @@ export const data: DataPerDay[] = [
       { name: "Mini Brown Rice", unit: 1 },
     ],
     extra2: [
-      { name: "Uncured Ham", unit: 1 },
+      { name: "Land O' Frost Uncured Ham", unit: 1 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -908,7 +908,7 @@ export const data: DataPerDay[] = [
       { name: "Mini Brown Rice", unit: 1 },
     ],
     extra2: [
-      { name: "Roast Beef", unit: 1 },
+      { name: "Land O' Frost Roast Beef", unit: 1 },
       { name: "Impact Whey Protein", unit: 1.5 },
     ],
     dinner: [
@@ -937,7 +937,7 @@ export const data: DataPerDay[] = [
       { name: "Mini White Rice", unit: 1 },
     ],
     extra2: [
-      { name: "Uncured Ham", unit: 1 },
+      { name: "Land O' Frost Uncured Ham", unit: 1 },
       { name: "Harvest Honey Wheat", unit: 0.25 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
@@ -1086,7 +1086,7 @@ export const data: DataPerDay[] = [
     ],
     extra2: [
       { name: "Harvest Honey Wheat", unit: 1 },
-      { name: "Roast Beef", unit: 0.5 },
+      { name: "Land O' Frost Roast Beef", unit: 0.5 },
       { name: "Impact Whey Protein", unit: 1 },
     ],
     dinner: [
@@ -1153,10 +1153,182 @@ export const data: DataPerDay[] = [
       { name: "Quaker Oats", unit: 1 },
       { name: "Blueberry", unit: 0.5 },
     ],
-    extra1: [],
-    lunch: [],
-    extra2: [],
-    dinner: [],
+    extra1: [{ name: "Protein One", unit: 1 }],
+    lunch: [
+        { name: "Brocolli", unit: 1.5 },
+        { name: "Chicken Breast", unit: 1.5 },
+        { name: "Egg White", unit: 2 },
+        { name: "Barilla Whole Grain Spaghetti", unit: 1 },
+    ],
+    extra2: [{ name: "Impact Whey Protein", unit: 1 }],
+    dinner: [
+        { name: "Brocolli", unit: 1.5 },
+        { name: "Chicken Breast", unit: 1.5 },
+        { name: "Egg White", unit: 2 },
+        { name: "Barilla Whole Grain Spaghetti", unit: 1 },
+    ],
     extra3: [],
+  },
+  {
+    date: "2020-12-28",
+    goal: 1800,
+    ratio: [0.41, 0.39, 0.2],
+    breakfast: [
+      { name: "365 Lowfat Milk", unit: 1 },
+      { name: "Fage 0% Yogurt", unit: 0.33 },
+      { name: "Quaker Oats", unit: 1 },
+      { name: "Blueberry", unit: 0.5 },
+    ],
+    extra1: [{ name: "Protein One", unit: 1 }],
+    lunch: [
+        { name: "Brocolli", unit: 1.5 },
+        { name: "Chicken Breast", unit: 1.5 },
+        { name: "Egg White", unit: 2 },
+        { name: "Mini White Rice", unit: 1 },
+    ],
+    extra2: [{ name: "Impact Whey Protein", unit: 2 }],
+    dinner: [
+        { name: "Brocolli", unit: 1.5 },
+        { name: "Chicken Breast", unit: 1.5 },
+        { name: "Egg White", unit: 2 },
+        { name: "Mini White Rice", unit: 1 },
+    ],
+    extra3: [],
+  },
+  {
+    date: "2020-12-29",
+    goal: 1800,
+    ratio: [0.41, 0.39, 0.2],
+    breakfast: [
+      { name: "365 Lowfat Milk", unit: 1 },
+      { name: "Fage 0% Yogurt", unit: 0.33 },
+      { name: "Quaker Oats", unit: 1 },
+      { name: "Blueberry", unit: 0.5 },
+    ],
+    extra1: [{ name: "Protein One", unit: 1 }],
+    lunch: [
+        { name: "Brocolli", unit: 1.55 },
+        { name: "Chicken Breast", unit: 1.6 },
+        { name: "Egg White", unit: 1 },
+        { name: "Egg", unit: 1 },
+        { name: "Mini White Rice", unit: 1 },
+    ],
+    extra2: [
+        { name: "Sara Lee Whole Wheat", unit: 1},
+        { name: "Land O' Frost Roast Beef", unit: 1},
+        { name: "Impact Whey Protein", unit: 1 }
+    ],
+    dinner: [
+        { name: "Brocolli", unit: 1.55 },
+        { name: "Chicken Breast", unit: 1.6 },
+        { name: "Egg White", unit: 2 },
+        { name: "Mini White Rice", unit: 1 },
+    ],
+    extra3: [],
+  },
+  {
+    date: "2020-12-30",
+    goal: 1800,
+    ratio: [0.41, 0.39, 0.2],
+    breakfast: [
+      { name: "365 Lowfat Milk", unit: 1 },
+      { name: "Fage 0% Yogurt", unit: 0.33 },
+      { name: "Quaker Oats", unit: 1 },
+      { name: "Blueberry", unit: 0.5 },
+    ],
+    extra1: [{ name: "Protein One", unit: 1 }],
+    lunch: [
+        { name: "Brocolli", unit: 1.55 },
+        { name: "Chicken Breast", unit: 1.6 },
+        { name: "Egg White", unit: 1 },
+        { name: "Egg", unit: 1 },
+        { name: "Mini Brown Rice", unit: 1 },
+    ],
+    extra2: [
+        { name: "Sara Lee Whole Wheat", unit: 1},
+        { name: "Land O' Frost Uncured Ham", unit: 1},
+        { name: "Impact Whey Protein", unit: 1 }
+    ],
+    dinner: [
+        { name: "Brocolli", unit: 1.55 },
+        { name: "Chicken Breast", unit: 1.6 },
+        { name: "Egg White", unit: 2 },
+        { name: "Mini White Rice", unit: 1 },
+    ],
+    extra3: [],
+  },
+  {
+    date: "2020-12-31",
+    goal: 1800,
+    ratio: [0.41, 0.39, 0.2],
+    breakfast: [
+      { name: "365 Lowfat Milk", unit: 1 },
+      { name: "Fage 0% Yogurt", unit: 0.33 },
+      { name: "Quaker Oats", unit: 1 },
+      { name: "Blueberry", unit: 0.3 },
+    ],
+    extra1: [],
+    lunch: [
+        { name: "Brocolli", unit: 0.75 },
+        { name: "Asparagus", unit: 0.75 },
+        { name: "Atlantic Salmon", unit: 1.6},
+        { name: "Barilla Whole Grain Spaghetti", unit: 1},
+        { name: "Red Onion", unit: 0.8},
+        { name: "Whole white mushrooms", unit: 0.25 },
+      ],
+      extra2: [
+        { name: "Egg White", unit: 2},
+        { name: "Chicken Breast", unit: 0.85},
+        { name: "Impact Whey Protein", unit: 1 }
+    ],
+    dinner: [
+      { name: "Brocolli", unit: 0.5 },
+      { name: "Asparagus", unit: 1 },
+      { name: "New York Strip Steak", unit: 1.7},
+      { name: "Barilla Whole Grain Spaghetti", unit: 1},
+      { name: "Red Onion", unit: 0.8},
+      { name: "Whole white mushrooms", unit: 0.25 },
+      { name: "Egg White", unit: 2}
+    ],
+    extra3: [
+      { name: "Impact Whey Protein", unit: 1 }
+    ],
+  },
+  {
+    date: "2021-01-011",
+    goal: 1800,
+    ratio: [0.41, 0.39, 0.2],
+    breakfast: [
+      { name: "365 Lowfat Milk", unit: 1 },
+      { name: "Fage 0% Yogurt", unit: 0.33 },
+      { name: "Quaker Oats", unit: 1 },
+      { name: "Blueberry", unit: 0.5 },
+    ],
+    extra1: [],
+    lunch: [
+      { name: "Brocolli", unit: 0.5 },
+      { name: "Asparagus", unit: 1 },
+      { name: "Atlantic Salmon", unit: 1.6},
+      { name: "Barilla Whole Grain Spaghetti", unit: 1},
+      { name: "Red Onion", unit: 0.8},
+      { name: "Whole white mushrooms", unit: 0.25 },
+    ],
+    extra2: [
+      { name: "Egg White", unit: 2},
+      { name: "Chicken Breast", unit: 0.85},
+      { name: "Impact Whey Protein", unit: 1 }
+    ],
+    dinner: [
+      { name: "Brocolli", unit: 0.5 },
+      { name: "Asparagus", unit: 1 },
+      { name: "New York Strip Steak", unit: 1.75},
+      { name: "Red Onion", unit: 0.8},
+      { name: "Whole white mushrooms", unit: 0.25 },
+      { name: "Mini White Rice", unit: 1},
+      { name: "Egg White", unit: 2}
+    ],
+    extra3: [
+      { name: "Impact Whey Protein", unit: 1 }
+    ],
   },
 ];

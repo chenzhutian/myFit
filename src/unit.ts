@@ -5,6 +5,21 @@ export const units = [
     serving: "100g",
     protein: 2.37, fat: 0.4, carb: 7.14, calorles: 35,
   },
+  {
+    name: "Asparagus",
+    serving: "100g",
+    protein: 2.2, carb: 3.9, fat: 0.1, calorles: 20,
+  },
+  {
+    name: "Red Onion",
+    serving: "100g",
+    protein: 0.92, carb: 10.1, fat: 0.08, calorles: 42,
+  },
+  {
+    name: "Whole white mushrooms",
+    serving: "100g",
+    protein: 3.6, carb: 3.6, fat: 0, calorles: 24,
+  },
 
 
   {
@@ -129,7 +144,14 @@ export const units = [
     serving: "1pack",
     protein: 70, carb: 0, fat: 2.5, calorles: 300,
   },
-
+  {
+    name: "Atlantic Salmon",
+    serving: "100g", protein: 20, carb: 0, fat: 10.85, calorles: 183,
+  },
+  { 
+    name: "New York Strip Steak",
+    serving: "100g", protein: 20, carb: 0,  fat: 14.35, calorles:  215.3
+  },
   /**
    * Side Meat
    */
@@ -147,14 +169,24 @@ export const units = [
     protein: 11, carb: 2, fat: 1, calorles: 70,
   },
   {
-    name: "Smoked Turkey Breast",
+    name: "Land O' Frost Smoked Turkey Breast",
     serving: "3slices/57g",
     protein: 11, carb: 1, fat: 1.5, calorles: 60,
   },
   {
-    name: "Roast Beef",
+    name: "Land O' Frost Applewood Smoked Turkey Breast",
+    serving: "3slices/57g",
+    protein: 9, carb: 3, fat: 2, calorles: 70,
+  },
+  {
+    name: "Land O' Frost Roast Beef",
     serving: "7slices/57g",
     protein: 12, carb: 0, fat: 2, calorles: 70,
+  },
+  {
+    name: "Land O' Frost Uncured Ham",
+    serving: "5slices/52g",
+    protein: 10, carb: 1, fat: 2, calorles: 60,
   },
   {
     name: "Harvest Honey Wheat",
@@ -162,9 +194,9 @@ export const units = [
     protein: 5, carb: 25, fat: 1.5, calorles: 130,
   },
   {
-    name: "Uncured Ham",
-    serving: "5slices/52g",
-    protein: 10, carb: 1, fat: 2, calorles: 60,
+    name: "Sara Lee Whole Wheat",
+    serving: "1slices/26g",
+    protein: 4, carb: 11, fat: 0.5, calorles: 60,
   },
 
     /**
@@ -228,11 +260,6 @@ export const units = [
     serving: "100g",
     protein: 2, carb: 9.46, fat: 0.2, calorles: 40,
   },
-  {
-    name: "Whole white mushrooms",
-    serving: "100g",
-    protein: 3.6, carb: 3.6, fat: 0, calorles: 24,
-  },
 
   {
     name: "Garlic",
@@ -260,14 +287,7 @@ export const units = [
     fat: 5,
     calorles: 60,
   },
-  {
-    name: "Asparagus",
-    serving: "100g",
-    protein: 2.2,
-    carb: 3.9,
-    fat: 0.1,
-    calorles: 20,
-  },
+
   {
     name: "Quaker Oats",
     serving: "1/2cup/40g",
